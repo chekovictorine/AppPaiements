@@ -11,5 +11,15 @@ internal class Program
         credit1.AfficherDetails();
         credit2.AfficherDetails();
         credit3.AfficherDetails();
+
+        Paypal paypal1 = new Paypal("reception",100 ,"chekovictorine@gmail.com" );
+        Paypal paypal2 = new Paypal("envoi", 500, "marcetame@gmail.com");
+
+        
+       paypal1.AfficherDetails();
+       paypal2 .AfficherDetails();
+
+
+
     }
 }
