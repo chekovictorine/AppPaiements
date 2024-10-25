@@ -10,19 +10,15 @@ namespace AppPaiements
     {
         public string Description{ get; set; }
         public double Montant { get; set; }
-        
-
+       
         public Paiement(string description,  double montant)
         {
             Description = description;
             Montant = montant;
-            
-
         }
         public virtual void AfficherDetails()
         {
             Console.WriteLine($"les informations du paiement  sont:{Description}, {Montant} ");
-
         }
     }
 }
