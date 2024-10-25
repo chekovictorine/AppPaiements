@@ -19,6 +19,14 @@ internal class Program
        paypal1.AfficherDetails();
        paypal2 .AfficherDetails();
 
+        Utilisateur utilisateur1 = new Utilisateur("victorine");
+        utilisateur1.AjouterPaiement(paypal1);
+        utilisateur1.AjouterPaiement(paypal2);
+        utilisateur1.AjouterPaiement(credit1);
+        utilisateur1 .AjouterPaiement(credit2);
+        utilisateur1.AjouterPaiement (credit3);
+        utilisateur1.AfficherInfos();
+
 
 
     }
